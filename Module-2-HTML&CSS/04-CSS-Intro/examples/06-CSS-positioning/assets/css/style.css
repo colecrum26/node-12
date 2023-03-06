@@ -40,3 +40,11 @@ section {
   bottom: 0;
   right: 0;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px dashed black;
+  width: 500px;
+}
