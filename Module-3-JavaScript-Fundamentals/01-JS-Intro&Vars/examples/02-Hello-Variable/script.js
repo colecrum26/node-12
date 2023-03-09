@@ -18,3 +18,5 @@ console.log("My name is ");
 
 // Logs "My name is Tonya"
 console.log("My name is " + studentName);
+
+console.log(`${studentName}\n${studentAge}`)
