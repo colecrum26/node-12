@@ -1,3 +1,8 @@
+:root{
+  --dark-blue: #13293d;
+  --white: #fff;
+  --bR: 50px;
+}
 :root {
   --dark: #13293d;
   --light: #ffff;
@@ -27,6 +32,8 @@ header {
   text-align: center;
   background-color: var(--dark);
   color: var(--light);
+  background: var(--dark-blue);
+  color: #fff;
 }
 
 nav {
@@ -35,6 +42,7 @@ nav {
 }
 
 nav a {
+  color: var(--dark-blue);
   color: var(--dark);
   padding: 14px 20px;
   text-decoration: none;
@@ -55,6 +63,8 @@ footer {
   bottom: 0;
   padding: 20px;
   text-align: center;
+  background: var(--dark-blue);
+  color: #fff;
   background-color: var(--dark);
   color: var(--light);
   margin-top: auto;
@@ -73,6 +83,7 @@ footer {
   border-style: solid;
   border-width: 1px;
   border-radius: var(--border-radius);
+  border-radius: var(--bR);
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
@@ -81,6 +92,7 @@ footer {
 }
 
 .card > header {
+  border-radius: var(--bR) var(--bR) 0px 0px;
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
   padding: 20px;
 }

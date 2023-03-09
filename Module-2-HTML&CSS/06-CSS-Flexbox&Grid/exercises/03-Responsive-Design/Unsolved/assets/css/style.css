@@ -17,6 +17,8 @@ header {
 /* 
 What happens when we set the display property to flex? 
 TODO: It changes how the child elements will grow or shrink
+TODO: Write your answer here 
+It changes the how it will grow or shrink the child elements
 */
 nav {
   display: flex;
@@ -33,6 +35,8 @@ nav a {
 /* 
 What is the flex-wrap property? 
 TODO: flex-wrap aligns content to the next line when cut off
+TODO: Write your answer here 
+align objects to one line or multiple so it doesn't get cut off
 */
 main {
   display: flex;

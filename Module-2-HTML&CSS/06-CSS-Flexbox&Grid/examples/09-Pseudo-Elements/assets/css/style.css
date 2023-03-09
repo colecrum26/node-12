@@ -36,7 +36,7 @@ h3 {
 }
 
 /* Added asterisk before every h3 heading */
-h3::before {
+h3:before {
   font-family: Impact;
   content: '\273A';
   color: #772014;
@@ -44,8 +44,8 @@ h3::before {
 }
 
 /* Added symbols before and after the nav links */
-nav li::before,
-nav li::after {
+nav li:before,
+nav li:after {
   content: '\2766';
   color: #8ac4ff;
   padding: 1%;
