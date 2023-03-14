@@ -11,7 +11,7 @@ if (hungerLevel >= 50) {
 
 // Evaluates to false so nothing is logged
 if (hungerLevel < 50) {
-  console.log("Hungry!");
+  console.log("Not Hungry!");
 }
 
 // Else statement 
@@ -31,7 +31,7 @@ if (isLunchTime) {
 
 // Evaluates to false so "It's Lunchtime Already" is logged
 if (!isLunchTime) {
-  console.log("Not Lunchtime Already!!");
+  console.log("Not Lunchtime Yet!!");
 } else {
   console.log("It's Lunchtime Already !!");
 }
