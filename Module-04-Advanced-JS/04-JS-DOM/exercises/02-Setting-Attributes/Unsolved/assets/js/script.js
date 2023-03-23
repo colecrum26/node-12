@@ -21,3 +21,16 @@ site3El.children[1].children[0].setAttribute("alt", "women working");
 site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
+var hFour = document.getElementsByTagName("h4");
+
+for (let i = 0; i < hFour.length; i++){
+    hFour[i].textContent = "Test";
+    hFour[i].style.color = "blue";
+    hFour[i].style.fontSize = "30px";
+    hFour[i].style.fontWeight = "bold";
+    hFour[i].style.paddingLeft = "10px";
+    hFour[i].style.margin = "0";
+
+}
+
+// Why is hFour text replacing "Site 1" et al?
