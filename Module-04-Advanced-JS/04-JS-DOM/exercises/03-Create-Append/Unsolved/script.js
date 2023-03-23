@@ -41,14 +41,38 @@ var foods = ["Apples", "Pizza", "Dumplings", "Cupcakes"];
 
 let oL = document.createElement("ol");
 
-for (i = 0; i < foods.length; i++){
-    let item = document.createElement("li");
-    item.textContent = foods[i];
-    item.style.color = "white";
-    item.style.padding = "5px";
-    item.style.marginLeft = "35px";
-    oL.appendChild(item);
-}
+// for (i = 0; i < foods.length; i++){
+//     let item = document.createElement("li");
+//     item.textContent = foods[i];
+//     item.style.color = "white";
+//     item.style.padding = "5px";
+//     item.style.marginLeft = "35px";
+//     oL.appendChild(item);
+// }
+
+let apple = String.fromCodePoint(0x1F34E);
+let pizza = String.fromCodePoint(0x1F355);
+let dumplings = String.fromCodePoint(0x1F95F);
+let cupcakes = String.fromCodePoint(0x1F9C1);
+
+li1.textContent = `${foods[0]} ${apple}`;
+li2.textContent = `${foods[1]} ${pizza}`;
+li3.textContent = `${foods[2]} ${dumplings}`;
+li4.textContent = `${foods[3]} ${cupcakes}`;
+
+liArr = [li1, li2, li3, li4];
+
+for(let li of liArr){
+    li.style.color = "white";
+    li.style.padding = "5px";
+    li.style.marginLeft = "35px";
+oL.appendChild(li)}
+
+li1.style.backgroundColor = "#666666";
+li2.style.backgroundColor = "#777777";
+li3.style.backgroundColor = "#888888";
+li4.style.backgroundColor = "#999999";
+
 
 favoriteEl.appendChild(oL);
 
