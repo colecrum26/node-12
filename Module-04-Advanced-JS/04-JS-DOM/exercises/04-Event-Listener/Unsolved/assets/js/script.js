@@ -3,7 +3,7 @@ var incrementEl = document.querySelector("#increment");
 var decrementEl = document.querySelector("#decrement");
 var countEl = document.querySelector("#count");
 
-// Refactored Solution
+// Refactored Solution - by building outside, it becomes more dynamic
 function setCounterText() {
   console.log(this);
   if (this == incrementEl){
