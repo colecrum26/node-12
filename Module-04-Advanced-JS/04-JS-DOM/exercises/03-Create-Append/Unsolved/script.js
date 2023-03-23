@@ -36,3 +36,21 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+
+var foods = ["Apples", "Pizza", "Dumplings", "Cupcakes"];
+
+let oL = document.createElement("ol");
+
+for (i = 0; i < foods.length; i++){
+    let item = document.createElement("li");
+    item.textContent = foods[i];
+    item.style.color = "white";
+    item.style.padding = "5px";
+    item.style.marginLeft = "35px";
+    oL.appendChild(item);
+}
+
+favoriteEl.appendChild(oL);
+
+oL.setAttribute("style", "background-color:#333333")
+oL.style.padding = "20px";
