@@ -4,7 +4,11 @@ import HelloDiv from "./components/HelloDiv";
 
 // App is our top-level main component that references other components
 function App() {
-  return <HelloDiv />;
+  return (
+  <div>
+    <HelloDiv />
+  </div>
+  );
 }
 
 export default App;
