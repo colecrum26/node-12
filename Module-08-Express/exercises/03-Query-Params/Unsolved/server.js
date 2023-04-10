@@ -11,10 +11,10 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
-
+// Returns specified term or all terms if none specified
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-
+  // Looks for queries greater than 0 and returns helper documentation on sort type
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -30,7 +30,7 @@ app.get('/api/terms/', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-
+// A specific term based on path
 app.get('/api/term/:term', (req, res) => {
   // TODO: Add a comment describing the content of req.params in this instance
 
